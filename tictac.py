@@ -12,14 +12,14 @@ from player import Player, AI, SmartAI, MiniMax
 print("Welcome to TIC-TAC-TOE Game!")
 while True:
     board = Board()
-    #player1 = Player("Bob", "X")
+    player1 = Player("Bob", "X")
     #player1 = AI("Bob", "X", board)
     #player1 = MiniMax("Max", "X", board)
-    player1 = SmartAI("Bob", "X", board)
+    #player1 = SmartAI("Bob", "X", board)
     #player2 = Player("Alice", "O")
     #player2 = AI("Alice", "O", board)
-    player2 = SmartAI("Alice", "O", board)
-    #player2 = MiniMax("Max", "O", board)
+    #player2 = SmartAI("Alice", "O", board)
+    player2 = MiniMax("Max", "O", board)
     turn = True
     while True:
         board.show()
